@@ -1,0 +1,189 @@
+@CHARSET "UTF-8";
+body{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #3a3a3a;
+    font-family: Verdana;
+}
+div.contact{
+    width: 80%;
+    margin:0px auto;
+    margin-top: 50px;
+    text-align: center;
+}
+div.header{
+	max-width: 1280px;
+	margin: 0px auto;
+	height: 75px;
+}
+div.header > img {
+	max-width: 100px;
+	float: left;
+}
+div.wrapper{
+	max-width: 1280px;
+	margin: 0px auto;
+	background-color: #d5d5d5;
+	display: flex;
+	padding: 20px;
+}
+div.main_div_wrapper{
+	max-width: 1280px;
+	margin: 0px auto;
+	background-color: #d5d5d5;
+	display: flex;
+	padding: 0px 20px;
+}
+div.menu{
+	background-color: #eeeced;
+	float: left;
+	margin-right: 10px;
+	flex: 0.24;
+	margin-bottom: 2px;
+}
+div.menu > ul{
+	list-style-type: none;
+	padding-left: 20px;
+}
+.menuitem {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+.menuitem span{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50px;
+    background: #903618;
+    transition: all 0.6s;
+}
+.menuitem:hover span {
+    width: 100%;
+}
+div.menu > ul > li{
+	cursor: pointer;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+    text-transform: uppercase;
+}
+div.menuitem > div:hover{
+	z-index: 9999;
+    position: relative;
+    color: #fff;
+}
+div.main_image{
+	float: left;
+	flex: 0.76;
+}
+div.main_image > img{
+	max-width: 100%;
+}
+div.main_div{
+	width: 100%;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+div.main_div > .gradient_about {
+    background: #c8c5a4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c8c5a4, #aeab76); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c8c5a4, #aeab76); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c8c5a4, #aeab76); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c8c5a4, #aeab76); /* Standard syntax */
+    width: calc(33.33% - 10px);
+    border:1px solid #93925a;
+    box-sizing: border-box;
+    margin-right: 10px;
+    height: 175px;
+    float: left;
+}
+div.main_div > .gradient_services {
+    background: #f0d198; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0d198, #f1bd5a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0d198, #f1bd5a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0d198, #f1bd5a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0d198, #f1bd5a); /* Standard syntax */
+    width: calc(33.33% - 10px);
+    border:1px solid #c29135;
+    box-sizing: border-box;
+    margin-right: 10px;
+    height: 175px;
+    float: left;
+}
+div.main_div > .gradient_contact {
+    background: #df9c81; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#df9c81, #d16133); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#df9c81, #d16133); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#df9c81, #d16133); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#df9c81, #d16133); /* Standard syntax */
+    width: 33.33%;
+    border:1px solid #b34824;
+    box-sizing: border-box;
+    height: 175px;
+    float: left;
+}
+div.home_page_footer_wrapper{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+}
+div.home_page_footer_wrapper > div.left_side{
+	width: calc(33.33% - 10px);
+	height: 300px;
+	border: 1px solid #d8d8d8;
+	background-color: #f3f3f3;
+	float: left;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+div.home_page_footer_wrapper > div.right_side{
+	width: 66.66%;
+	float: left;
+}
+div.footer{
+	height: 50px;
+	background-color: #f8f8f8;
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.social_twitter, .social_instagram, .social_facebook{
+	height: 24px;
+	width: 24px;
+	background: url("../pages/twitter.png");
+	float: right;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.social_instagram{
+	background: url("../pages/instagram.png");
+	float: right;
+}
+.social_facebook{
+	background: url("../pages/facebook.png");
+	float: right;
+}
+.social_wrapper{
+	padding-top: 40px;
+}
+@media only screen and (max-width: 1200px){
+	div.menuitem{
+		height: 35px;
+	}
+	div.menu > ul > li{
+		line-height: 35px;
+	}
+	.menuitem span{
+		height: 35px;
+	}
+}
